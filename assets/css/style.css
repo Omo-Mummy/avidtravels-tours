@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+*{
+    font-family: 'Lora', serif;
+
+}
+:root{
+    --main-color: rgb(245,255,250);
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(0,0,128);
+}
+.navbar{
+    text-transform: capitalize;
+    background: var(--secondary-color);
+}
+.navbar-brand{
+    color: #fff !important;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+}
+.navbar ul li a{
+    color: var(--main-color);
+}
+.navbar ul li a:hover{
+    color: var(--secondary-color);
+    background-color:  #fff;
+    border-radius: .5rem;
+}
+.navbar .navbar-brand img{
+    height: 50px;
+    border-radius: 50px;
+    background: none;
+}
+#banner .carousel-inner img{
+    height: 95vh;
+    background-position: center center;
+}
+#banner .carousel-inner .carousel-caption{
+    background: var(--secondary-color);
+    opacity: 0.6;
+    color: var(--primary-color);
+}
+
+#services .card img{
+    height: 35vh;
+}
+#services .container .card:hover .card-body{
+    background: var(--secondary-color) !important;
+    color: var(--main-color) !important;
+}
+#testimony .container{
+    background: rgb(15, 15, 37);
+    color : #fff;
+    padding: 5rem;
+}
+.ads{
+    color:var(--secondary-color)
+}
+/* contact */
+#contact img{
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+    width: 100%;
+}
+#contact .details{
+    background: url(/assets/images/bgc.jpg);
+    height: 87vh;
+    border-radius: 2rem;
+}
+#contact i{
+    margin: 1rem;
+    justify-items: space-between;
+    text-decoration: underline;
+}
+#contact a{
+    text-decoration: none;
+    color: black;
+}
+#contact ul li{
+    list-style: none;
+}
+#contact .info a{
+    margin: 2rem;
+    color: black;
+    text-decoration: none;
+    margin: 1.6rem 0;
+}
+#cont .info a:hover{
+    color: white;
+    background: var(--secondary-color);
+}
+#contact .row .text a{
+    display: block;
+    margin: 1.6rem 0;
+    text-decoration: none;
+    color: black;
+}
+#contact .row i{
+    display: block;
+}
+
+/* about page */
+/* about page */
+#banner2{
+    background: url(/assets/images/airplane2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 85vh;
+}
+#banner2 h2{
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    font-weight: 500;
+    font-size: bolder;
+    color: var(--main-color);
+}
+#banner2 .text{
+    opacity: 0.8;
+    color: #fff;
+    background: var(--secondary-color);
+}
+#banner2 .container .ads{
+    color: var(--main-color);
+}
+#about-us h2{
+    margin: 2rem;
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+/* footer */
+.footer{
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin: 2rem,1rem;
+    padding: 2rem 0;
+}
+.footer .row a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    margin: .5rem;
+}
+.footer .line{
+    background: #e4dada;
+    height: .2vh;
+    width: 100%;
+    margin: 3rem 0;
+}
+@media (max-width:480px){
+    #banner .carousel-inner img{
+        height: 30vh;
+        background-position: center center;
+    }
+    #services .card img{
+        height: 25vh;
+    }
+    #testimony .container{
+        background: var(--secondary-color);
+        color : #fff;
+        font-size: large;
+    } 
+    #banner2{
+        height: 60vh;
+    }     
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    #banner .carousel-inner img{
+        height: 50vh;
+        background-position: center center;
+    }
+    #banner .carousel-caption h3{
+        font-size: 2rem;
+    }
+    #banner .carousel-caption p{
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    #services .row{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #services .row .col-md-4{
+        width: 100% !important;
+    }
+    #services .row .col-md-4 p{
+        font-size: 2rem;
+    }
+    #services .card img{
+        height: 45vh;
+    }
+    #testimony .container{
+        background: var(--secondary-color);
+        color : #fff;
+        font-size: large;
+    } 
+    #banner2{
+        height: 60vh;
+    }     
+}
+@media (max-width:375px) {
+    #banner2 p{
+        font-size: normal !important;
+    }
+}
+@media (max-width:1400px) {
+    #services .card img{
+        height: 25vh;
+    } 
+}
+@media (max-width:480px) {
+    #contact .details {
+        height: 70vh;
+    }
+    #contact img{
+        height: 35vh;
+    }
+}
+@media (max-width:767px) {
+    #contact .details {
+        height: 35vh;}
+    #contact img{
+        height: 35vh;
+    }
+}
+@media (max-width:1000px) {
+
+
+
+
